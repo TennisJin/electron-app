@@ -12,8 +12,16 @@ export default defineConfig({
   renderer: {
     resolve: {
       alias: {
-        '@renderer': resolve('src/renderer/src')
+        '@': resolve('src/renderer/src')
       }
+    },
+    server: {
+      port: 5200,
+      open: true,
+      base: '/login'
+    },
+    pages: {
+      '/login.html': '@/views/pages/auth/Login.vue'
     },
     plugins: [vue()]
   }
