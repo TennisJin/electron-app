@@ -18,10 +18,7 @@ export default defineConfig({
     server: {
       port: 5200,
       open: true,
-      base: '/login'
-    },
-    pages: {
-      '/login.html': '@/views/pages/auth/Login.vue'
+      host: true
     },
     plugins: [vue()]
   }
