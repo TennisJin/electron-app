@@ -154,6 +154,11 @@ const router = createRouter({
       component: () => import('@/views/pages/Landing.vue')
     },
     {
+      path: '/toilet',
+      name: 'toilet',
+      component: () => import('@/views/toilet/Index.vue')
+    },
+    {
       path: '/pages/notfound',
       name: 'notfound',
       component: () => import('@/views/pages/NotFound.vue')

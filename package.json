@@ -14,16 +14,20 @@
     "postinstall": "electron-builder install-app-deps",
     "build:win": "npm run build && electron-builder --win --config",
     "build:mac": "npm run build && electron-builder --mac --config",
-    "build:linux": "npm run build && electron-builder --linux --config"
+    "build:linux": "npm run build && electron-builder --linux --config",
+    "build:all": "npm run build && electron-builder --win --config && electron-builder --mac --config"
   },
   "dependencies": {
     "@electron-toolkit/preload": "^2.0.0",
     "@electron-toolkit/utils": "^2.0.0",
+    "chart.js": "3.3.2",
+    "createjs": "~1.0.1",
     "element-plus": "~2.4.4",
+    "gsap": "~3.12.4",
+    "p5": "~1.9.0",
     "primeflex": "~3.3.1",
     "primeicons": "~6.0.1",
     "primevue": "~3.45.0",
-    "chart.js": "3.3.2",
     "sass": "^1.55.0"
   },
   "devDependencies": {
